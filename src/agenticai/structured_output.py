@@ -40,5 +40,9 @@ def main():
     queries = ["Tell me about the World War 1 briefly ?","Tell me about the World War 2 briefly ?"]
     for query in queries:
         result = Runner.run_sync(historian_Agent,query)
-        print(f"Event Details :{result.final_output}")
+        # Print the final output
+        # print(f"Final Output :{result.final_output}")
+        
+        # Print the structured output in Json format
+        print(f"Event Details :{result.final_output.dict()}")
     
