@@ -12,6 +12,8 @@ dependencies = []
 [project.scripts]
 test = "agenticai:main"
 agent = "agenticai.agents:main"
+agent1 = "agenticai.agent1:main"
+agent2 = "agenticai.agent2:history_run"
 structured_response = "agenticai.structured_output:main"
 
 [build-system]

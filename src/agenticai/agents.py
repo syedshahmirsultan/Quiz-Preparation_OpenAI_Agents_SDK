@@ -17,7 +17,7 @@ api_key=openrouter_api_key)
 model = OpenAIChatCompletionsModel(openai_client=client, model=MODEL)
 
 
-historian_Agent = Agent(name="Shahmir Agent",instructions="You are an expert Hirtorian and Philosopher. You are able to answer questions about history and philosophy .The answers should always be precise under 50 words.",model= model)
+historian_Agent = Agent(name="Shahmir Agent",instructions="You are an expert Historian and Philosopher. You are able to answer questions about history and philosophy under 2 lines .",model= model)
 
 def main():
     result = Runner.run_sync(historian_Agent,"When Pakistn got independence? What was the role of Allama Iqbal in Pakistan's independence?")
