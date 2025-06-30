@@ -18,6 +18,9 @@ agent3 = "agenticai.agent3:main"
 agent4 = "agenticai.agent4:main"
 agent5 = "agenticai.agent5:main"
 agent6 = "agenticai.agent6:main"
+agent7 = "agenticai.agent7:main"
+run_main = "agenticai.run:run_main"
+to_input_list = "agenticai.to_input_list:main"
 structured_response = "agenticai.structured_output:main"
 
 [build-system]
