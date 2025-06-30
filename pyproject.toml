@@ -14,6 +14,10 @@ test = "agenticai:main"
 agent = "agenticai.agents:main"
 agent1 = "agenticai.agent1:main"
 agent2 = "agenticai.agent2:history_run"
+agent3 = "agenticai.agent3:main"
+agent4 = "agenticai.agent4:main"
+agent5 = "agenticai.agent5:main"
+agent6 = "agenticai.agent6:main"
 structured_response = "agenticai.structured_output:main"
 
 [build-system]
