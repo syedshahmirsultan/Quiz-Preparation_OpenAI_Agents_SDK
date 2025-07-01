@@ -21,6 +21,7 @@ agent6 = "agenticai.agent6:main"
 agent7 = "agenticai.agent7:main"
 run_main = "agenticai.run:run_main"
 to_input_list = "agenticai.to_input_list:main"
+run_streamed = "agenticai.run_streamed:run_main"
 structured_response = "agenticai.structured_output:main"
 
 [build-system]
