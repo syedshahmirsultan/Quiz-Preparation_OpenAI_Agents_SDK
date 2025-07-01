@@ -29,13 +29,13 @@ instructions="You are an expert Media Reporter.",
 model=model,
 tools = [get_weather,get_temperature])
 
-# def main():
-#     for tool in agent.tools:
-#         print(tool.name)
-#         print(tool.description)
-#         print(tool.params_json_schema)
-
-
 def main():
+    for tool in agent.tools:
+        print(tool.name)
+        print(tool.description)
+        print(tool.params_json_schema)
+
+
+def main_run():
     result = Runner.run_sync(agent,"What is the weather and temperature in SF?")
     print(result.final_output)

@@ -26,7 +26,7 @@ run_item_stream = "agenticai.run_item_stream:run_main"
 structured_response = "agenticai.structured_output:main"
 demo_loop = "agenticai.run_demo_loop:run_main"
 function_as_tool = "agenticai.function_as_tool:main"
-
+function_as_tool_run = "agenticai.function_as_tool:main_run"
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
