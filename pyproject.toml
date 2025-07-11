@@ -31,6 +31,7 @@ agents_as_tools = "agenticai.agents_as_tools:main"
 context = "agenticai.context:main"
 clonning = "agenticai.agent_clonning:main"
 max_turns = "agenticai.max_turns:main"
+run_streamed2 = "agenticai.run_streamed2:run"
 
 [build-system]
 requires = ["hatchling"]
