@@ -28,6 +28,7 @@ demo_loop = "agenticai.run_demo_loop:run_main"
 function_as_tool = "agenticai.function_as_tool:main"
 function_as_tool_run = "agenticai.function_as_tool:main_run"
 agents_as_tools = "agenticai.agents_as_tools:main"
+context = "agenticai.context:main"
 
 [build-system]
 requires = ["hatchling"]
