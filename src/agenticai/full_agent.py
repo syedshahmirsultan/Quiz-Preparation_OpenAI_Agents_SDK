@@ -40,7 +40,7 @@ model = OpenAIChatCompletionsModel(openai_client=client, model=MODEL)
 
 
 
-scientific_agent = Agent(name="Scientific Agent",instructions="You are an expert in the History of AI .", handoff_description="You provide authentic and precise information about the History of AI.",model=model)
+scientific_agent = Agent(name="Scientific Agent",instructions="You give the authentic AI History.", handoff_description="You provide authentic and precise information about the History of AI.",model=model)
 
 @function_tool
 def motivation_agent(context:RunContextWrapper):
