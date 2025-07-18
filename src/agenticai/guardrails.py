@@ -38,6 +38,7 @@ guardrail_agent = Agent(name="Guardrail Agent", instructions= "You have to check
 @output_guardrail
 async def guardrail_check(context:RunContextWrapper,agent:Agent,output:OutputClass):
     result = await Runner.run(guardrail_agent,output.response,context=context)
+    # print(f"I got you {context.context['name']}")
     print(f"I got you {context.context.name}")
     return GuardrailFunctionOutput(output_info=result.final_output,tripwire_triggered= result.final_output.is_dates)
     
@@ -49,6 +50,7 @@ historian_agent = Agent(name="Historian Agent",instructions="You are an expert i
 async def main():
     try :
         result = await Runner.run(historian_agent,"hi",context=UserContext(name="Shahmir",age=18,email="shahmir@gmail.com"))
+        # result = await Runner.run(historian_agent,"hi",context={"name":"Shahmir","age":18,"email":"shahmir@gmail.com"})
         print(result.final_output)
     except OutputGuardrailTripwireTriggered:
         print("Output Guardrail Triggered")
