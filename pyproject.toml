@@ -33,6 +33,7 @@ clonning = "agenticai.agent_clonning:main"
 max_turns = "agenticai.max_turns:main"
 run_streamed2 = "agenticai.run_streamed2:run"
 full_agent = "agenticai.full_agent:main"
+handoff = "agenticai.handoff:main"
 
 [build-system]
 requires = ["hatchling"]
