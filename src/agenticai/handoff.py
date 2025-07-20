@@ -35,18 +35,13 @@ math_agent = Agent(
 
 manager_Agent = Agent(
     model=model,
-    instructions=(
-        "You are a manager agent responsible for delegating tasks only. "
-        "Do not answer questions directly. If a user question is about science topics like physics, chemistry, biology, etc., "
-        "you must hand it off to the Science Agent. "
-        "If it's about math, equations, or calculations, hand it off to the Math Agent. "
-        "Never answer a question unless no sub-agent can handle it."
-    ),
+    instructions="You are a manager agent responsible for delegating tasks only. ",
     name="Manager Agent",
     handoffs =[science_agent,math_agent]
 )
 
 
 def main():
-    result = Runner.run_sync(manager_Agent, "What is Electromagnetism?")
-    print(f"Manager Agent Response: {result.final_output}")
+    # result = Runner.run_sync(manager_Agent, "What is Electromagnetism?")
+    result = Runner.run_sync(manager_Agent, "What is Linear Alegbra?")
+    print(f"Agent Name : {result.last_agent.name}")
