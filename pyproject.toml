@@ -35,6 +35,7 @@ run_streamed2 = "agenticai.run_streamed2:run"
 full_agent = "agenticai.full_agent:main"
 handoff = "agenticai.handoff:main"
 guardrails = "agenticai.guardrails:run"
+complete_agent = "agenticai.complete_agent:run"
 
 [build-system]
 requires = ["hatchling"]
